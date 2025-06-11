@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+body {
+	background-color: #f7fafd;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	margin: 3rem 3rem 2.5rem 3rem;
+}
+section {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.5fr 2fr;
+	background-color: #fff;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+.first-part {
+	margin-bottom: 1.5rem;
+}
+.img-one,
+.img-two,
+.img-three,
+.img-four {
+	width: 100%;
+	height: 100%;
+}
+.img-one {
+	background: center / cover url("./assets/first-img.jpg");
+}
+.img-two {
+	background: center / cover url("./assets/sec-img.jpg");
+}
+.img-three {
+	background: center / cover url("./assets/thirst-img.jpg");
+}
+.img-four {
+	background: center / cover url("./assets/fourth-img.jpg");
+}
+.second-part {
+	padding: 8px 12px;
+}
+.div-name {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 18px;
+}
+h2 {
+	color: #1c202b;
+	font-size: 24px;
+	font-weight: 800;
+}
+.para-rank {
+	background-color: #0a327b;
+	border-radius: 6px;
+	padding: 2.5px 4px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 800;
+	width: max-content;
+}
+.first-para,
+.sec-para {
+	color: #5e6778;
+	font-size: 16px;
+	font-weight: 500;
+}
+.first-para {
+	padding-bottom: 1.5rem;
+}
+.days-para {
+	display: flex;
+	align-items: end;
+	padding-top: 18px;
+	color: #939cad;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+@media screen and (min-width: 376px) {
+	section {
+		grid-template-columns: 1fr 3fr;
+		grid-template-rows: 1fr;
+	}
+	.first-part {
+		margin-bottom: 0;
+	}
+	.div-name {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 3rem 8.5rem;
+		margin: 3rem 3rem 3.8rem 3rem;
+	}
+	section {
+		height: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1.7fr 2fr;
+	}
+	.first-part {
+		margin-bottom: 1.5rem;
+	}
+	.pt-36 {
+		padding-top: 36px;
+	}
+	.pt-56 {
+		padding-top: 56px;
+	}
+	.second-part {
+		padding-bottom: 8px;
+	}
+}
